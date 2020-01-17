@@ -28,6 +28,6 @@ end
 def get_english_meaning(file_path, emoticon)
   hash = load_library(file_path)
   if hash["get_emoticon"].include?(emoticon)
-    return["get_meaning"][emoticon]
+    return["get_meaning"][word]
   end 
 end
