@@ -26,7 +26,6 @@ end
 def get_english_meaning(file_path, emoticon)
   hash = load_library(file_path)
   if hash['get_meaning'].include?(emoticon)
-    # binding.pry
     return hash['get_meaning'][emoticon]
   else
     return "Sorry, that emoticon was not found"
