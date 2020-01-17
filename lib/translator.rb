@@ -8,7 +8,6 @@ def load_library(file_path)
   hash['get_emoticon'] = {}
   emoticon_library.each do |word, array|
     english, japanese = array
-    # binding.pry
     hash['get_meaning'][japanese] = word
     hash['get_emoticon'][english] = japanese
   end
@@ -22,7 +21,6 @@ def get_japanese_emoticon(file_path, emoticon)
   else 
     return "Sorry, that emoticon was not found"
   end 
-  # binding.pry
 end 
 
 def get_english_meaning(file_path, emoticon)
