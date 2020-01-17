@@ -27,4 +27,7 @@ end
 
 def get_english_meaning(file_path, emoticon)
   load_library(file_path)
+  if hash["get_meaning"].include?(emoticon)
+    return["get_emoticon"][emoticon]
+  end 
 end
