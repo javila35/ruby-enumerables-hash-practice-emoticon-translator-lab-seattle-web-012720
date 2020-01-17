@@ -16,8 +16,8 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   hash = load_library(file_path)
-  if hash["get_emoticon"].include?(emoticon)
-    return hash["get_emoticon"][emoticon]
+  if hash['get_emoticon'].include?(emoticon)
+    return hash['get_emoticon'][emoticon]
   else 
     return "Sorry, that emoticon was not found"
   end 
@@ -25,8 +25,8 @@ end
 
 def get_english_meaning(file_path, emoticon)
   hash = load_library(file_path)
-  if hash["get_emoticon"].include?(emoticon)
+  if hash['get_meaning'].include?(emoticon)
     # binding.pry
-    return hash["get_meaning"][emoticon]
+    return hash['get_meaning'][emoticon]
   end 
 end
